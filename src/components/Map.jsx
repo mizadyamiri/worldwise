@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useEffect, useState } from 'react';
 import { useCities } from '../contexts/CitiesContext';
-import { useNavigate, useSearchParams } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import {
   MapContainer,
   Marker,
@@ -11,6 +11,7 @@ import {
   useMapEvents,
 } from 'react-leaflet';
 import { useGeolocation } from '../hooks/useGeoLocation';
+import { useUrlPosition } from '../hooks/useUrlPosition';
 import styles from './Map.module.css';
 import Button from './Button';
 
@@ -24,9 +25,7 @@ function Map() {
     getPosition,
   } = useGeolocation();
 
-  const [searchParams] = useSearchParams();
-  const mapLat = searchParams.get('lat') ?? 50;
-  const mapLng = searchParams.get('lng') ?? 0;
+  const [mapLat, mapLng] = useUrlPosition();
 
   useEffect(() => {
     if (mapLat && mapLng) setMapPosition([mapLat, mapLng]);

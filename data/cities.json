@@ -25,16 +25,40 @@
       "id": "17806751"
     },
     {
-      "cityName": "Berlin",
-      "country": "Germany",
-      "emoji": "🇩🇪",
-      "date": "2027-02-12T09:24:11.863Z",
-      "notes": "Amazing 😃",
+      "id": "b475",
+      "cityName": "Rome",
+      "country": "Italy",
+      "emoji": "🇮🇹",
+      "date": "2024-10-11T12:15:34.429Z",
+      "notes": "incrdibilis!!!",
       "position": {
-        "lat": 52.53586782505711,
-        "lng": 13.376933665713324
-      },
-      "id": "98443197"
+        "lat": "41.887895762040785",
+        "lng": "12.486018273361369"
+      }
+    },
+    {
+      "id": "806a",
+      "cityName": "Faro",
+      "country": "Portugal",
+      "emoji": "🇵🇹",
+      "date": "2024-10-11T12:31:49.851Z",
+      "notes": "",
+      "position": {
+        "lat": "37.023277802410405",
+        "lng": "-7.933507966000936"
+      }
+    },
+    {
+      "id": "7a13",
+      "cityName": "Babol",
+      "country": "Iran (Islamic Republic of)",
+      "emoji": "🇮🇷",
+      "date": "2024-10-11T12:38:04.493Z",
+      "notes": "",
+      "position": {
+        "lat": "36.53996281816428",
+        "lng": "52.70667461211966"
+      }
     }
   ]
 }

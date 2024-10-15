@@ -21,9 +21,7 @@ function City() {
 
   useEffect(() => {
     getCity(id);
-
-    return () => {};
-  }, [id]);
+  }, [id, getCity]);
 
   console.log(currentCity);
 
